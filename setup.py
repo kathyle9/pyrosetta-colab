@@ -5,7 +5,7 @@ setup(
   packages = ['pyrosetta-colab'],   # Chose the same as "name"
   entry_points={
      'console_scripts': [
-        'my_project = my.project.__main__:main'
+        'pyrosetta-colab = pyrosetta-colab.__main__:main'
      ]
   },
   version = '0.7',      # Start with a small number and increase it with every change you make
