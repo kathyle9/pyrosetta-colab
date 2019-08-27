@@ -1,8 +1,14 @@
 from distutils.core import setup
+from setuptools import setup
 setup(
   name = 'pyrosetta-colab',         # How you named your package folder (MyLib)
   packages = ['pyrosetta-colab'],   # Chose the same as "name"
-  version = '0.6',      # Start with a small number and increase it with every change you make
+  entry_points={
+     'console_scripts': [
+        'my_project = my.project.__main__:main'
+     ]
+  },
+  version = '0.7',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Contains commands for using PyRosetta in Google Colaboratory',   # Give a short description about your library
   author = 'Kathy Le',                   # Type in your name
