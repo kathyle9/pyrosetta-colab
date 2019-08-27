@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
   name = 'pyrosetta-colab',         # How you named your package folder (MyLib)
   packages = ['pyrosetta-colab'],   # Chose the same as "name"
-  entry_points={
+  entry_points = {
      'console_scripts': [
         'pyrosetta-colab = pyrosetta-colab.__main__:main'
      ]
